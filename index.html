@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Monochromish</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Monochromish">
+        <meta property="og:description" content="Welcome to my website.">
+        <meta property="og:url" content="https://monolul.tk">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="theme-color" content="#2e3137">
+        <link rel="stylesheet" href="assets/main.css">
+        <link rel="manifest" href="manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/image.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#2e3137">
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    };
+    </script>
+    </head>
+    <body>
+        <main>
+            <script>
+                function audioPlay() {
+                    var audio = document.getElementById("audio");
+                    audio.volume = 0.4;
+                    audio.play()
+                }
+                function videoPlay() {
+                    var video = document.getElementById("video");
+                    video.play()
+                }
+            </script>
+            <input type="checkbox" autocomplete="off" id="overlay-toggle">
+            <div class="overlay fullscreen">
+                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                    <span class="no-hover" style="font-family: Zirconian; font-size: 0.6em;">Press to start</span>
+                    <span class="hover" style="font-family: Zirconian; font-size: 0.6em;">Press to start</span>
+                </label>
+            </div>
+            <audio loop="" preload="auto" id="audio">
+                <source src="assets/audio.mp3" type="audio/mp3">
+            </audio>
+            <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+                <source src="assets/bg.mp4" type="video/mp4">
+            </video>
+            <section class="fullscreen text-content">
+            </div>
+            <div id="center" align="center">
+                        <img src="assets/centerimage.png" alt="Profile Picture" align="center" width="144" height="144">
+                    </a>
+                <h1 style="font-family: Zirconian; font-size: 5em;">Monochromish</h1>
+                <div class="socials">
+                    <span>
+                        > <a href="https://prizmbot.tk" style="text-decoration:none; font-family: Zirconian; font-size: 2em;">Prizm </a>
+                    </span>
+                    <span>
+                        > <a href="https://github.com/Monochromish" style="text-decoration:none; font-family: Zirconian; font-size: 2em;">GitHub</a>
+                    </span>
+                    <span>
+                        > <a href="https://discord.com/users/500315184510795819" style="text-decoration:none; font-family: Zirconian; font-size: 2em;">Discord</a>
+                    </span>
+                    <span>
+                        > <a href="https://twitter.com/Monochromish" style="text-decoration:none; font-family: Zirconian; font-size: 2em;">Twitter</a>
+                    </span>
+                    <br>
+                    <span>
+                        <a href="https://discord.com/users/500315184510795819" target="_blank" rel="nofollow">
+                            <img src="https://lanyard-profile-readme.vercel.app/api/500315184510795819?idleMessage=Mostly%20sleeping💤" alt="Discord Presence" align="center">
+                        </a>
+                    </span>
+            </div>
+        </main>
+</body>
+</html>

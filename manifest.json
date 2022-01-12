@@ -1,0 +1,20 @@
+{
+	"short_name": "Monochromish",
+	"name": "Monochromish",
+	"icons": [
+		{
+			"src": "/assets/image.png",
+			"type": "image/png",
+			"sizes": "144x 144"
+		},
+		{
+			"src": "/assets/image.png",
+			"type": "image/png",
+			"sizes": "144x 144"
+		}
+	],
+	"start_url": "/index.html",
+	"background_color": "#2e3137",
+	"display": "standalone",
+	"theme_color": "#2e3137"
+}
