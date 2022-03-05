@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"bundle": "browserify main.js -o bundle.js"
+	},
+	"dependencies": {
+		"browserify": "^17.0.0",
+		"pretty-ms": "^7.0.1",
+		"request-promise": "^4.2.6"
+	}
+}
