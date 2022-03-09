@@ -58,6 +58,7 @@ async function getInputValue() {
 		terminalSpanText('recently played', 'displays my recently played music');
 		terminalSpanText('status', 'displays current status');
 		terminalSpanText('contact', 'displays all of my social media accounts');
+		terminalSpanText('snake', 'play 404 snake');
 		terminalSpanText('cls', 'clears the konsole');
 	} else if (value === 'about') {
 		validInput(value);
@@ -84,16 +85,20 @@ async function getInputValue() {
 		);
 	} else if (value === 'recently played') {
 		validInput(value);
-		var data = await fetchCurrentScrobble();
-		let detailsStatus = 'Listening to';
-		if (data.scrobbleStatus !== 'Now scrobbling') detailsStatus = `Was ${detailsStatus}`;
-		let albumName = data.album;
-		if (data.album.length < 2) albumName = `${albumName}  `;
-		await delay(500);
-		terminalSpanText(
-			`${detailsStatus} <a href=${data.trackUrl} target='_blank'>${data.trackName}</a>`,
-			`by ${data.artist} on ${data.album}`
-		);
+		try {
+			var data = await fetchCurrentScrobble();
+			let detailsStatus = 'Listening to';
+			if (data.scrobbleStatus !== 'Now scrobbling') detailsStatus = `Was ${detailsStatus}`;
+			let albumName = data.album;
+			if (data.album.length < 2) albumName = `${albumName}  `;
+			await delay(500);
+			terminalSpanText(
+				`${detailsStatus} <a href=${data.trackUrl} target='_blank'>${data.trackName}</a>`,
+				`by ${data.artist} on ${data.album}`
+			);
+		} catch (e) {
+			terminalText(`Unable to fetch recent played track`);
+		}
 	} else if (value === 'status') {
 		validInput(value);
 		var data = await fetchDiscordStatus();
@@ -111,8 +116,9 @@ async function getInputValue() {
 		terminalText(`${emoji} currently ${data.presence}`);
 	} else if (value === 'contact') {
 		validInput(value);
-		terminalText(
-			"<a href='https://discord.com/users/500315184510795819' target='_blank'><i class='fa fa-comments white'></i> discord</a>"
+		terminalSpanText(
+			`<i class='fa fa-comments white'></i> discord`,
+			`<a href='https://discord.com/users/500315184510795819' target='_blank'>profile</a> || <a href='https://discord.gg/E6z5ZmsV4m' target='_blank'>server</a>`
 		);
 		terminalText(
 			"<a href='https://github.com/Monochromish' target='_blank'><i class='fab fa-github white'></i> github</a>"
@@ -121,10 +127,14 @@ async function getInputValue() {
 		terminalText(
 			"<a href='https://twitter.com/Monochromish' target='_blank'><i class='fab fa-twitter white'></i> twitter</a>"
 		);
+	} else if (value === 'snake') {
+		validInput(value);
+		terminalText("<a href='https://monolul.me/404' target='_blank'> click me boop boop...</a>");
 	} else if (value === 'cls') {
 		document.querySelectorAll('p').forEach(e => e.parentNode.removeChild(e));
 		document.querySelectorAll('section').forEach(e => e.parentNode.removeChild(e));
 	} else if (value === 'no bitches') {
+		validInput(value);
 		terminalText('———————————No bitches?———————————');
 		terminalText('⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝');
 		terminalText('⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇');

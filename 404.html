@@ -10,14 +10,14 @@
 			}
 
 			body {
-				background: #393a59;
+				background: #282a36;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 			}
 
 			canvas {
-				border: 2px solid white;
+				border: 2px solid #44475a;
 			}
 		</style>
 	</head>
@@ -81,10 +81,11 @@
 					snake.cells.pop();
 				}
 
-				context.fillStyle = 'red';
+				const colors = ['#ff5555', '#f1fa8c', '#50fa7b', '#8be9fd', '#ff79c6'];
+				context.fillStyle = colors[Math.floor(Math.random() * colors.length)];
 				context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
 
-				context.fillStyle = 'green';
+				context.fillStyle = '#bd93f9';
 				snake.cells.forEach(function (cell, index) {
 					context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
 
