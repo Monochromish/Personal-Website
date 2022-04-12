@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 2.17em;
+  font-weight: bolder;
+}
+albumart {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  right: 50px;
+}
+.ribbon {
+  border-radius: 20%;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+button {
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: -13px 11px 25px 1px rgba(0, 0, 0, 0.55);
+}

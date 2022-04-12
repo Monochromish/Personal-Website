@@ -1,10 +1,42 @@
 {
-	"scripts": {
-		"bundle": "browserify main.js -o bundle.js"
-	},
-	"dependencies": {
-		"browserify": "^17.0.0",
-		"pretty-ms": "^7.0.1",
-		"request-promise": "^4.2.6"
-	}
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "start": "serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "babel-loader": "^8.2.4",
+    "node-fetch": "^2.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-repo-card": "^1.2.1",
+    "use-last-fm": "^0.6.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "autoprefixer": "^10.4.2",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^6.7.0",
+    "daisyui": "^2.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.7",
+    "postcss-loader": "^6.2.1",
+    "serve": "^12.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^4.7.4"
+  }
 }
