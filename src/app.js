@@ -2,6 +2,7 @@
 import React from 'react';
 import './app.css';
 import Header from './Header';
+import Footer from './Footer';
 import { useLastFM } from 'use-last-fm';
 import RepoCard from 'react-repo-card';
 import { BrowserView, MobileView } from 'react-device-detect';
@@ -65,21 +66,27 @@ const App = props => {
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-5xl font-bold">My projects</h1>
-            <p class="py-6">These are some of my open source projects that I am currently working on</p>
+            <p class="py-6">
+              Here are some of my projects that I have worked on
+              <br />
+              including Kalopsia-Bot;
+              <br />
+              One of the best Discord Moderation and Multi-utility Discord bot written in Discord.js v12
+            </p>
             <div align="center">
-              <div style={{ width: '405px' }}>
+              <div style={{ width: '400px' }}>
                 <RepoCard username="Monochromish" repository="Kalopsia-Bot" />
               </div>
               <br></br>
-              <div style={{ width: '405px' }}>
+              <div style={{ width: '400px' }}>
                 <RepoCard username="dracula" repository="cider" />
               </div>
               <br></br>
-              <div style={{ width: '405px' }}>
+              <div style={{ width: '400px' }}>
                 <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" />
               </div>
               <br></br>
-              <div style={{ width: '405px' }}>
+              <div style={{ width: '400px' }}>
                 <RepoCard username="Monochromish" repository="discord-activities" />
               </div>
               <br></br>
@@ -90,11 +97,7 @@ const App = props => {
           </div>
         </div>
       </div>
-      <footer class="footer footer-center p-4 bg-base-300 text-base-content">
-        <div>
-          <p>Copyright © 2022 - All right reserved by Monochromish</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

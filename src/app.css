@@ -49,3 +49,14 @@ button:hover {
   transform: scale(1.05);
   box-shadow: -13px 11px 25px 1px rgba(0, 0, 0, 0.55);
 }
+div.icon:hover {
+  color: grey;
+  transform: scale(1.05);
+  box-shadow: -13px 11px 25px 1px rgba(0, 0, 0, 0.55);
+}
+p {
+  transition: 1s;
+}
+p:hover {
+  color: #dddddd;
+}
