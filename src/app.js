@@ -6,9 +6,12 @@ import Footer from './Footer';
 import { useLastFM } from 'use-last-fm';
 import RepoCard from 'react-repo-card';
 import { BrowserView, MobileView } from 'react-device-detect';
+import useSound from 'use-sound';
+import boopSfx from './assets/boop.mp3';
 
 const App = props => {
   const lastFM = useLastFM('Monochromish', '268c0ed4ae784e4e0bcb3cb1c49f61a6');
+  const [play] = useSound(boopSfx);
   let data;
   if (lastFM.status !== 'playing' || lastFM.status == 'error') {
     data = {
@@ -43,20 +46,20 @@ const App = props => {
             </p>
             <BrowserView>
               <albumart>
-                <a href={data.link} target="_blank">
+                <a href={data.link} target="_blank" onClick={play}>
                   <img src={data.art} alt={data.album} class="ribbon" />
                 </a>
               </albumart>
             </BrowserView>
-            <button class="btn btn-success">
-              <a href="http://github.com/Monochromish">GitHub</a>
-            </button>{' '}
-            <button class="btn btn-success">
-              <a href="https://discord.com/users/500315184510795819">Discord</a>
-            </button>{' '}
-            <button class="btn btn-success">
-              <a href="mailto:monolul@outlook.com">Mail</a>
-            </button>{' '}
+            <a href="http://github.com/Monochromish" target="_blank" onClick={play}>
+              <button class="btn btn-success">Github</button>{' '}
+            </a>
+            <a href="https://discord.com/users/500315184510795819" target="_blank" onClick={play}>
+              <button class="btn btn-success">Discord</button>{' '}
+            </a>
+            <a href="mailto:monolul@outlook.com" target="_blank" onClick={play}>
+              <button class="btn btn-success">Mail</button>{' '}
+            </a>
             <br />
             <br />
           </div>
@@ -90,9 +93,11 @@ const App = props => {
                 <RepoCard username="Monochromish" repository="discord-activities" />
               </div>
               <br></br>
-              <button class="btn btn-success">
-                <a href="https://github.com/Monochromish?tab=repositories">View More</a>
-              </button>{' '}
+              <a href="https://github.com/Monochromish?tab=repositories">
+                <button class="btn btn-success" target="_blank" onClick={play}>
+                  View More
+                </button>{' '}
+              </a>
             </div>
           </div>
         </div>
