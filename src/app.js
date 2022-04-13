@@ -72,15 +72,15 @@ const App = props => {
               </div>
               <br></br>
               <div style={{ width: '405px' }}>
-                <RepoCard username="prizm-project" repository="Prizm-Website" />
-              </div>
-              <br></br>
-              <div style={{ width: '405px' }}>
-                <RepoCard username="Monochromish" repository="discord-activities" />
+                <RepoCard username="dracula" repository="cider" />
               </div>
               <br></br>
               <div style={{ width: '405px' }}>
                 <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" />
+              </div>
+              <br></br>
+              <div style={{ width: '405px' }}>
+                <RepoCard username="Monochromish" repository="discord-activities" />
               </div>
               <br></br>
               <button class="btn btn-success">
