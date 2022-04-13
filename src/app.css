@@ -50,6 +50,7 @@ button:hover {
   box-shadow: -13px 11px 25px 1px rgba(0, 0, 0, 0.55);
 }
 div.icon:hover {
+  transition: 0.5s linear;
   color: grey;
   transform: scale(1.05);
   box-shadow: -13px 11px 25px 1px rgba(0, 0, 0, 0.55);
