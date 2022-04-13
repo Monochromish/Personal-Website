@@ -77,19 +77,19 @@ const App = props => {
               One of the best Discord Moderation and Multi-utility Discord bot written in Discord.js v12
             </p>
             <div align="center">
-              <div style={{ width: '400px' }}>
+              <div style={{ width: '400px' }} id="card">
                 <RepoCard username="Monochromish" repository="Kalopsia-Bot" />
               </div>
               <br></br>
-              <div style={{ width: '400px' }}>
+              <div style={{ width: '400px' }} id="card">
                 <RepoCard username="dracula" repository="cider" />
               </div>
               <br></br>
-              <div style={{ width: '400px' }}>
+              <div style={{ width: '400px' }} id="card">
                 <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" />
               </div>
               <br></br>
-              <div style={{ width: '400px' }}>
+              <div style={{ width: '400px' }} id="card">
                 <RepoCard username="Monochromish" repository="discord-activities" />
               </div>
               <br></br>
