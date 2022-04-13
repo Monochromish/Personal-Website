@@ -93,10 +93,8 @@ const App = props => {
                 <RepoCard username="Monochromish" repository="discord-activities" />
               </div>
               <br></br>
-              <a href="https://github.com/Monochromish?tab=repositories">
-                <button class="btn btn-success" target="_blank" onClick={play}>
-                  View More
-                </button>{' '}
+              <a href="https://github.com/Monochromish?tab=repositories" target="_blank" onClick={play}>
+                <button class="btn btn-success">View More</button>{' '}
               </a>
             </div>
           </div>
