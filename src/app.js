@@ -1,8 +1,10 @@
 'use strict';
 import React from 'react';
 import './app.css';
+import Header from './Header';
 import { useLastFM } from 'use-last-fm';
 import RepoCard from 'react-repo-card';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const App = props => {
   const lastFM = useLastFM('Monochromish', '268c0ed4ae784e4e0bcb3cb1c49f61a6');
@@ -27,19 +29,7 @@ const App = props => {
 
   return (
     <>
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-        <title>Monochromish - Home</title>
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@Monochromish" />
-        <meta name="twitter:title" content="Monochromish - Home" />
-        <meta name="twitter:description" content="My personal website, nothing much nothing less." />
-        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/79590499?v=4" />
-        <meta property="og:title" content="Monochromish - Home" />
-        <meta property="og:url" content="https://monolul.me" />
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/79590499?v=4" />
-      </head>
+      <Header />
       <div class="hero min-h-[25rem]">
         <div class="hero-content text-center">
           <div class="max-w-md">
@@ -50,11 +40,13 @@ const App = props => {
                 {data.name} {data.artist} {data.album}
               </b>
             </p>
-            <albumart>
-              <a href={data.link} target="_blank">
-                <img src={data.art} alt={data.album} class="ribbon" />
-              </a>
-            </albumart>
+            <BrowserView>
+              <albumart>
+                <a href={data.link} target="_blank">
+                  <img src={data.art} alt={data.album} class="ribbon" />
+                </a>
+              </albumart>
+            </BrowserView>
             <button class="btn btn-success">
               <a href="http://github.com/Monochromish">GitHub</a>
             </button>{' '}

@@ -14,7 +14,9 @@
     "babel-loader": "^8.2.4",
     "node-fetch": "^2.5.0",
     "react": "^17.0.2",
+    "react-device-detect": "^2.2.2",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "react-repo-card": "^1.2.1",
     "use-last-fm": "^0.6.1"
   },
