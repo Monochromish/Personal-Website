@@ -1,7 +1,6 @@
 'use strict';
 import React from 'react';
 import './app.css';
-import Header from './Header';
 import Footer from './Footer';
 import { useLastFM } from 'use-last-fm';
 import RepoCard from 'react-repo-card';
@@ -33,7 +32,6 @@ const App = props => {
 
   return (
     <>
-      <Header />
       <div class="hero min-h-[25rem]">
         <div class="hero-content text-center">
           <div class="max-w-md">

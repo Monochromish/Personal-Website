@@ -4,7 +4,7 @@ import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import useSound from 'use-sound';
 import boopSfx from './assets/boop.mp3';
 
-export default function Header() {
+export default function Footer() {
   const [play] = useSound(boopSfx);
   return (
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
