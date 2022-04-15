@@ -14,6 +14,16 @@
     <meta property="og:title" content="Monochromish - Home" />
     <meta property="og:url" content="https://monolul.me" />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/79590499?v=4" />
+    <meta name="theme-color" content="#0f1729" />
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/icons-512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#0f1729" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
     <title></title>
   </head>
   <body>

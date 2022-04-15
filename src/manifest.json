@@ -1,0 +1,25 @@
+{
+  "short_name": "Monochromish",
+  "name": "Monochromish - Home",
+  "icons": [
+    {
+      "src": "/assets/icons-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#0f1729",
+  "display": "standalone",
+  "theme_color": "#0f1729"
+}
