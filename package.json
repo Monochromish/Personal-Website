@@ -22,6 +22,7 @@
     "react-device-detect": "^2.2.2",
     "react-dom": "^17.0.2",
     "react-repo-card": "^1.2.1",
+    "react-tilt": "^0.1.4",
     "use-last-fm": "^0.6.1",
     "use-sound": "^4.0.1"
   },

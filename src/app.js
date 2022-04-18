@@ -7,6 +7,7 @@ import RepoCard from 'react-repo-card';
 import { BrowserView, MobileView } from 'react-device-detect';
 import useSound from 'use-sound';
 import boopSfx from './assets/boop.mp3';
+import Tilt from 'react-tilt';
 
 const App = props => {
   const lastFM = useLastFM('Monochromish', '268c0ed4ae784e4e0bcb3cb1c49f61a6');
@@ -75,21 +76,29 @@ const App = props => {
               One of the best Discord Moderation and Multi-utility Discord bot written in Discord.js v12
             </p>
             <div align="center">
-              <div style={{ width: '400px' }} id="card">
-                <RepoCard username="Monochromish" repository="Kalopsia-Bot" />
-              </div>
+              <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
+                <div style={{ width: '400px' }}>
+                  <RepoCard username="Monochromish" repository="Kalopsia-Bot" />
+                </div>
+              </Tilt>
               <br></br>
-              <div style={{ width: '400px' }} id="card">
-                <RepoCard username="dracula" repository="cider" />
-              </div>
+              <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
+                <div style={{ width: '400px' }}>
+                  <RepoCard username="dracula" repository="cider" />
+                </div>
+              </Tilt>
               <br></br>
-              <div style={{ width: '400px' }} id="card">
-                <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" />
-              </div>
+              <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
+                <div style={{ width: '400px' }}>
+                  <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" />
+                </div>
+              </Tilt>
               <br></br>
-              <div style={{ width: '400px' }} id="card">
-                <RepoCard username="Monochromish" repository="discord-activities" />
-              </div>
+              <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
+                <div style={{ width: '400px' }}>
+                  <RepoCard username="Monochromish" repository="discord-activities" />
+                </div>
+              </Tilt>
               <br></br>
               <a href="https://github.com/Monochromish?tab=repositories" target="_blank" onClick={play}>
                 <button class="btn btn-success">View More</button>{' '}
