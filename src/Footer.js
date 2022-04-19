@@ -19,8 +19,18 @@ export default function Footer() {
             <FontAwesomeIcon icon={faGithubAlt} size="2x" />
           </a>
         </div>
-        <p>Copyright © 2022 - All right reserved by Monochromish</p>
-        <p>Source code for this website can be found on my Github</p>
+        <p id="glow">Copyright © 2022 - All right reserved by Monochromish</p>
+        <p id="glow">
+          Source code for this website can be found on my{' '}
+          <a
+            href="https://github.com/Monochromish/personal-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={play}
+          >
+            Github
+          </a>
+        </p>
       </div>
     </footer>
   );

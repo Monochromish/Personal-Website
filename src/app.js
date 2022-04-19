@@ -37,7 +37,7 @@ const App = props => {
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-5xl font-bold">Monochromish</h1>
-            <p class="py-6">
+            <p class="py-6" id="glow">
               STD Testing Centre, Student and a Part-time Developer{' '}
               <b>
                 {data.name} {data.artist} {data.album}

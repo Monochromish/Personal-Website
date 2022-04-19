@@ -55,9 +55,9 @@ div.icon:hover {
   transform: scale(1.05);
   box-shadow: -13px 11px 25px 1px rgba(0, 0, 0, 0.55);
 }
-p {
+p#glow {
   transition: 1s;
 }
-p:hover {
+p#glow:hover {
   color: #dddddd;
 }
