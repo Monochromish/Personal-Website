@@ -4379,10 +4379,10 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-repo-card@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/react-repo-card/-/react-repo-card-1.2.1.tgz"
-  integrity sha512-iX9diY3cqgPxEPhXuWJ7LYARgqHN/nI/G9oF6ZP5V9KxsJqJKgLwG38opf28o8EukLB2XFVTxseyjQfTOJk6HQ==
+react-repo-card@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-repo-card/-/react-repo-card-2.0.1.tgz#923e605859c39324d9c1dbc48bc630dcfc255c1d"
+  integrity sha512-/+y9gcsP0Hi/U7fM4vHOUO8lYhPKo0s6uiJxseIimID2WVQUwMMQ0a0zWDXTR4xRwM9qcMHJbMEqaQ8ytHVPrg==
   dependencies:
     string-replace-to-array "^2.1.0"
 
@@ -4916,7 +4916,7 @@ spdy@^4.0.2:
 
 string-replace-to-array@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.npmjs.org/string-replace-to-array/-/string-replace-to-array-2.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/string-replace-to-array/-/string-replace-to-array-2.1.0.tgz#44571dbd33a3e23de31db948b5b84f1b7913fb39"
   integrity sha512-xG2w4fE5FsTXS4AFxoF3uctByqTIFBX8lFRNcPcIznTVCMXbYvbatkPVLpAo13tfuWtzbWEV6u5bjoE9bOv87w==
 
 string-width@^2.0.0, string-width@^2.1.1:

@@ -78,25 +78,25 @@ const App = props => {
             <div align="center">
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="Monochromish" repository="Kalopsia-Bot" />
+                  <RepoCard username="Monochromish" repository="Kalopsia-Bot" dark />
                 </div>
               </Tilt>
               <br></br>
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="dracula" repository="cider" />
+                  <RepoCard username="dracula" repository="cider" dark />
                 </div>
               </Tilt>
               <br></br>
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" />
+                  <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" dark />
                 </div>
               </Tilt>
               <br></br>
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="Monochromish" repository="discord-activities" />
+                  <RepoCard username="Monochromish" repository="discord-activities" dark />
                 </div>
               </Tilt>
               <br></br>
