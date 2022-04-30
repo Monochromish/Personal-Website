@@ -31,8 +31,23 @@ const App = props => {
     };
   }
 
+  var theme;
+  var repoDarkTheme;
+  if (window.matchMedia('(prefers-color-scheme: dark)') && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'myDarkTheme';
+    repoDarkTheme = true;
+  } else if (
+    window.matchMedia('(prefers-color-scheme: light)') &&
+    window.matchMedia('(prefers-color-scheme: light)').matches
+  ) {
+    theme = 'winter';
+    repoDarkTheme = false;
+  } else {
+    theme = 'myDarkTheme';
+    repoDarkTheme = true;
+  }
   return (
-    <>
+    <html data-theme={theme}>
       <div class="hero min-h-[25rem]">
         <div class="hero-content text-center">
           <div class="max-w-md">
@@ -78,25 +93,25 @@ const App = props => {
             <div align="center">
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="Monochromish" repository="Kalopsia-Bot" dark />
+                  <RepoCard username="Monochromish" repository="Kalopsia-Bot" dark={repoDarkTheme} />
                 </div>
               </Tilt>
               <br></br>
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="dracula" repository="cider" dark />
+                  <RepoCard username="dracula" repository="cider" dark={repoDarkTheme} />
                 </div>
               </Tilt>
               <br></br>
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" dark />
+                  <RepoCard username="Monochromish" repository="Last.fm-Discord-Rich-Presence" dark={repoDarkTheme} />
                 </div>
               </Tilt>
               <br></br>
               <Tilt className="Tilt" options={{ max: 25, reverse: true }}>
                 <div style={{ width: '400px' }}>
-                  <RepoCard username="Monochromish" repository="discord-activities" dark />
+                  <RepoCard username="Monochromish" repository="discord-activities" dark={repoDarkTheme} />
                 </div>
               </Tilt>
               <br></br>
@@ -108,7 +123,7 @@ const App = props => {
         </div>
       </div>
       <Footer />
-    </>
+    </html>
   );
 };
 export default App;
