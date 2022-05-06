@@ -71,7 +71,7 @@ const App = props => {
             <a href="https://discord.com/users/500315184510795819" target="_blank" onClick={play}>
               <button class="btn btn-success">Discord</button>{' '}
             </a>
-            <a href="mailto:monolul@outlook.com" target="_blank" onClick={play}>
+            <a href="mailto:monolul@outlook.com?subject=ex-excuse%20me%3F%20is%20this%20mono-senpai%3F>_<" target="_blank" onClick={play}>
               <button class="btn btn-success">Mail</button>{' '}
             </a>
             <br />
